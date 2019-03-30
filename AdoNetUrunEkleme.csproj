@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5D904B8-07A3-4FA0-9C63-D7F0EF7BE25A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_02_Ornekler</RootNamespace>
+    <AssemblyName>02_Ornekler</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category.cs" />
+    <Compile Include="FormGenelDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenelDurum.Designer.cs">
+      <DependentUpon>FormGenelDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrnekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrnekler.Designer.cs">
+      <DependentUpon>FormOrnekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStok.Designer.cs">
+      <DependentUpon>FormStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunEkle.Designer.cs">
+      <DependentUpon>FormUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunGuncelle.Designer.cs">
+      <DependentUpon>FormUrunGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunListeleme.Designer.cs">
+      <DependentUpon>FormUrunListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormıNSERTcATEGORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormıNSERTcATEGORY.Designer.cs">
+      <DependentUpon>FormıNSERTcATEGORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGenelDurum.resx">
+      <DependentUpon>FormGenelDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrnekler.resx">
+      <DependentUpon>FormOrnekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStok.resx">
+      <DependentUpon>FormStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunEkle.resx">
+      <DependentUpon>FormUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunGuncelle.resx">
+      <DependentUpon>FormUrunGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunListeleme.resx">
+      <DependentUpon>FormUrunListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormıNSERTcATEGORY.resx">
+      <DependentUpon>FormıNSERTcATEGORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
